@@ -15,7 +15,7 @@ def send_telegram_message(message, chat_id):
     }
     requests.post(telegram_url, json=payload)
 
-@app.route('/', methods=['POST'])
+@app.route('/alert' , methods=['POST'])
 def handle_alert():
     data = request.json
     message = data.get('message', 'Kein Text empfangen.')
