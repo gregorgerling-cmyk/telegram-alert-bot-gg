@@ -29,4 +29,4 @@ def home():
 
 if __name__ == '__main__':
     send_telegram_message("✅ Test: Bot läuft! Verbindung funktioniert.", CHAT_ID)
-    app.run(host='0.0.0.0', port=3000)
+    app.run(host='0.0.0.0', port=8080)
